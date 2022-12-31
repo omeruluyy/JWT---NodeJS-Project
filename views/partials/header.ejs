@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurtlar Vadisi Özel</title>
+  <link rel="icon" href="https://e7.pngegg.com/pngimages/357/662/png-clipart-pana-film-serial-polat-alemdar-valley-of-the-wolves-star-tv-pana-angle-text-thumbnail.png" type="image/icon type">
+
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav>
+    <h1><a href="/">Kurtlar Vadisi</a></h1>
+    <ul>
+      <% if(user) {%>
+        <li>Welcome, <%=user.email%></li>
+        <li><a href="/logout">Çıkış</a></li>
+      <% } else{%>
+        <li><a href="/login">Giriş</a></li>
+        <li><a href="/signup" class="btn">Kayıt Ol</a></li>
+        <%} %>
+    </ul>
+  </nav>
+  

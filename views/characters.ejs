@@ -1,0 +1,15 @@
+<%- include('partials/header'); -%>
+
+<ul class="recipes">
+
+  <% for( var i=0;i<characters.length;i++ ){ %>
+  <li class="recipe">
+    <img src="<%=characters[i].photo%>" alt="smoothie recipe icon">
+    <h4><%=characters[i].name%></h4>
+    <p><%=characters[i].description%></p>
+  </li>
+  <% }%>
+
+</ul>
+
+<%- include('partials/footer'); -%>
